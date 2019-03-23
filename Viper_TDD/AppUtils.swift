@@ -31,17 +31,18 @@ func hideProgressIndicator(view:UIView){
     
 }
 
-func downloadImage(imageLink: String) -> UIImage{
-    print(imageLink)
-    var dImage = UIImage()
-        DispatchQueue.global().async {
-                let data = try? Data(contentsOf: URL(string: imageLink)!)
-                if let data = data{
-                    print(data)
-                    return dImage = UIImage(data: data)!
-                }else{
-                    //print("URL does not exists")
-                }
+func downloadImage(imageLink: String, cellImage: UIImageView){
+    DispatchQueue.global().async {
+        let data = try? Data(contentsOf: URL(string: imageLink)!)
+        if let data = data{
+            print(data)
+            let dImage = UIImage(data: data)!
+            DispatchQueue.main.async {
+                cellImage.image  = dImage
             }
-    return dImage
+            
+        }else{
+            //print("URL does not exists")
+        }
+    }
 }

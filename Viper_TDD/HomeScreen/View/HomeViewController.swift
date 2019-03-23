@@ -54,20 +54,8 @@ extension HomeViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
         cell.nameLabel.text = productArrayList[indexPath.row].name
         cell.descriptionLabel.text = productArrayList[indexPath.row].description
-        DispatchQueue.global().async {
-            if let imageLink = self.productArrayList[indexPath.row].imageLink{
-            let url = URL(string:imageLink)
-            if let url = url{
-                let data = try? Data(contentsOf: url)
-                if let data = data{
-                    DispatchQueue.main.async {
-                        cell.productImageView.image = UIImage(data: data)
-                    }
-                }
-            }
-            }else{
-                //print("URL does not exists")
-            }
+        if let imageLink = productArrayList[indexPath.row].image{
+            downloadImage(imageLink:imageLink, cellImage: cell.productImageView)
         }
         return cell
     }

@@ -158,13 +158,6 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		D08901E3223F2A3C006047FA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		D0995526223C9124006D26AD = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +181,6 @@
 		D0995531223C9124006D26AD /* Viper_TDD */ = {
 			isa = PBXGroup;
 			children = (
-				D08901E3223F2A3C006047FA /* New Group */,
 				D0995532223C9124006D26AD /* AppDelegate.swift */,
 				D0765708223E1E79007325F5 /* HomeScreen */,
 				D0995536223C9124006D26AD /* Main.storyboard */,
