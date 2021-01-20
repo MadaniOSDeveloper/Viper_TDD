@@ -1,0 +1,36 @@
+/* 
+  myownjson.strings
+  Viper_TDD
+
+  Created by Madan Avulagadda on 20/01/21.
+  Copyright © 2021 TCS. All rights reserved.
+*/
+[
+  {
+    "id": "230",
+    "name": "Raju",
+    "description": "An 8-ounce serving of our refreshing H+ Sport raspberry mineral water fulfills a day's nutritional requirements for over 12 vitamins and minerals.",
+    "image_title": "mineral-water-raspberry_600px",
+    "image": "https://hplussport.com/wp-content/uploads/2015/12/mineral-water-raspberry_600px.png",
+    "lat": "17.372433",
+    "long" "78.516905"
+  },
+  {
+    "id": "240",
+    "name": "Santu",
+    "description": "An 8-ounce serving of our refreshing H+ Sport strawberry mineral water fulfills a day's nutritional requirements for over 12 vitamins and minerals.",
+    "image_title": "mineral-water-strawberry_600px",
+    "image": "https://hplussport.com/wp-content/uploads/2015/12/mineral-water-strawberry_600px.png",
+    "lat": "17.447341",
+    "long" "78.377410"
+  },
+{
+  "id": "429",
+  "name": "Mady",
+  "description": "An 8-ounce serving of our refreshing H+ Sport strawberry mineral water fulfills a day's nutritional requirements for over 12 vitamins and minerals.",
+  "image_title": "mineral-water-strawberry_600px",
+  "image": "https://hplussport.com/wp-content/uploads/2015/12/mineral-water-strawberry_600px.png",
+  "lat": "17.447341",
+  "long" "78.377410"
+}
+]
